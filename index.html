@@ -430,8 +430,10 @@
       position: absolute;
       inset: 0;
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
+      gap: 10px;
       background: rgba(0,0,0,0.3);
       transition: background .2s;
     }
@@ -448,6 +450,14 @@
       transition: transform .15s;
     }
     .play-btn:hover .play-circle { transform: scale(1.1); }
+    .play-label {
+      font-size: 0.75rem;
+      font-weight: 800;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: #fff;
+      text-shadow: 0 1px 6px rgba(0,0,0,0.7);
+    }
 
     /* ── FOOTER ── */
     footer {
@@ -490,7 +500,7 @@
       <div class="info-box">
         <div class="info-cover" onclick="abrirVideo('6a2c257257b5fea2c93780a3')">
           <img src="images/capa.webp" alt="Capa – Quase Amor" />
-          <div class="play-btn"><div class="play-circle">▶</div></div>
+          <div class="play-btn"><div class="play-circle">▶</div><span class="play-label">Assistir Agora</span></div>
         </div>
         <div class="info-content">
           <div class="info-meta">
@@ -507,7 +517,7 @@
       <div class="info-box">
         <div class="info-cover" onclick="abrirVideo('6a2b4c3176d8eed1cfea0abc')">
           <img src="images/capa2.webp" alt="Capa – A Mãe CEO e o Pai Incrível" />
-          <div class="play-btn"><div class="play-circle">▶</div></div>
+          <div class="play-btn"><div class="play-circle">▶</div><span class="play-label">Assistir Agora</span></div>
         </div>
         <div class="info-content">
           <div class="info-meta">
@@ -524,7 +534,7 @@
       <div class="info-box">
         <div class="info-cover" onclick="abrirVideo('6a2b52408001297f97e697a6')">
           <img src="images/capa3.webp" alt="Capa – Casamento Obrigatório" />
-          <div class="play-btn"><div class="play-circle">▶</div></div>
+          <div class="play-btn"><div class="play-circle">▶</div><span class="play-label">Assistir Agora</span></div>
         </div>
         <div class="info-content">
           <div class="info-meta">
@@ -541,7 +551,7 @@
       <div class="info-box">
         <div class="info-cover" onclick="abrirVideo('6a2c28015e877cc41915fc56')">
           <img src="images/capa4.webp" alt="Capa – Acasalada com Meu Selvagem Alfa" />
-          <div class="play-btn"><div class="play-circle">▶</div></div>
+          <div class="play-btn"><div class="play-circle">▶</div><span class="play-label">Assistir Agora</span></div>
         </div>
         <div class="info-content">
           <div class="info-meta">
